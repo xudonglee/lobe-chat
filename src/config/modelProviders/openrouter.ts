@@ -119,7 +119,8 @@ const OpenRouter: ModelProviderCard = {
   checkModel: 'mistralai/mistral-7b-instruct:free',
   id: 'openrouter',
   modelList: { showModelFetcher: true },
-  name: 'OpenRouter',
+  // name: 'OpenRouter',
+  name: 'Ark',
 };
 
 export default OpenRouter;

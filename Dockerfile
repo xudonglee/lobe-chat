@@ -133,7 +133,7 @@ ENV \
     # OpenAI
     OPENAI_API_KEY="" OPENAI_MODEL_LIST="" OPENAI_PROXY_URL="" \
     # OpenRouter
-    OPENROUTER_API_KEY="" OPENROUTER_MODEL_LIST="" \
+    OPENROUTER_API_KEY="sk-or-v1-lobechatdlssx929-8dx-5133" OPENROUTER_MODEL_LIST="" \
     # Perplexity
     PERPLEXITY_API_KEY="" PERPLEXITY_PROXY_URL="" \
     # Qwen

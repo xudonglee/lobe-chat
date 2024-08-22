@@ -5,11 +5,13 @@ import { LobeOpenAICompatibleFactory } from '../utils/openaiCompatibleFactory';
 import { OpenRouterModelCard } from './type';
 
 export const LobeOpenRouterAI = LobeOpenAICompatibleFactory({
-  baseURL: 'https://openrouter.ai/api/v1',
+  // baseURL: 'https://openrouter.ai/api/v1',
+  baseURL: 'https://api.agiark2.com/api/v1',
   constructorOptions: {
     defaultHeaders: {
+      // Need to change HTTP-Referer
       'HTTP-Referer': 'https://chat-preview.lobehub.com',
-      'X-Title': 'Lobe Chat',
+      'X-Title': 'Ark Chat',
     },
   },
   debug: {

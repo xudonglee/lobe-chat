@@ -96,7 +96,8 @@ export const getLLMConfig = () => {
     runtimeEnv: {
       API_KEY_SELECT_MODE: process.env.API_KEY_SELECT_MODE,
 
-      ENABLED_OPENAI: process.env.ENABLED_OPENAI !== '0',
+      // ENABLED_OPENAI: process.env.ENABLED_OPENAI !== '0',
+      ENABLED_OPENAI: !!process.env.OPENAI_API_KEY,
       OPENAI_API_KEY: process.env.OPENAI_API_KEY,
       OPENAI_PROXY_URL: process.env.OPENAI_PROXY_URL,
       OPENAI_MODEL_LIST: process.env.OPENAI_MODEL_LIST,
@@ -155,7 +156,8 @@ export const getLLMConfig = () => {
       AWS_ACCESS_KEY_ID: process.env.AWS_ACCESS_KEY_ID,
       AWS_SECRET_ACCESS_KEY: process.env.AWS_SECRET_ACCESS_KEY,
 
-      ENABLED_OLLAMA: process.env.ENABLED_OLLAMA !== '0',
+      // ENABLED_OLLAMA: process.env.ENABLED_OLLAMA !== '0',
+      ENABLED_OLLAMA: !!process.env.OLLAMA_PROXY_URL,
       OLLAMA_PROXY_URL: process.env.OLLAMA_PROXY_URL || '',
       OLLAMA_MODEL_LIST: process.env.OLLAMA_MODEL_LIST,
 

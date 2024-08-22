@@ -15,7 +15,7 @@ import {
   Novita,
   Ollama,
   OpenAI,
-  OpenRouter,
+  // OpenRouter,
   Perplexity,
   SiliconCloud,
   Stepfun,
@@ -100,7 +100,8 @@ const ModelProviderIcon = memo<ModelProviderIconProps>(({ provider }) => {
     }
 
     case ModelProvider.OpenRouter: {
-      return <OpenRouter size={20} />;
+      // return <OpenRouter size={20} />;
+      return <Perplexity size={20} />;
     }
 
     case ModelProvider.ZeroOne: {

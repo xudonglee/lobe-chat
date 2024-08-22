@@ -25,7 +25,7 @@ import {
   Moonshot,
   OpenAI,
   OpenChat,
-  OpenRouter,
+  // OpenRouter,
   Perplexity,
   Rwkv,
   Spark,
@@ -66,7 +66,8 @@ const ModelIcon = memo<ModelProviderIconProps>(({ model: originModel, size = 12 
   if (model.includes('mistral') || model.includes('mixtral') || model.includes('codestral') || model.includes('mathstral')) return <Mistral.Avatar size={size} />;
   if (model.includes('pplx') || model.includes('sonar')) return <Perplexity.Avatar size={size} />;
   if (model.includes('yi-')) return <Yi.Avatar size={size} />;
-  if (model.startsWith('openrouter')) return <OpenRouter.Avatar size={size} />; // only for Cinematika and Auto
+  // if (model.startsWith('openrouter')) return <OpenRouter.Avatar size={size} />; // only for Cinematika and Auto
+  if (model.startsWith('openrouter')) return <Perplexity.Avatar size={size} />; // only for Cinematika and Auto
   if (model.startsWith('openchat')) return <OpenChat.Avatar size={size} />;
   if (model.includes('aya')) return <Aya.Avatar size={size} />;
   if (model.includes('command')) return <Cohere.Avatar size={size} />;

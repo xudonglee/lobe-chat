@@ -1,6 +1,7 @@
 'use client';
 
-import { OpenAI } from '@lobehub/icons';
+// import { OpenAI } from '@lobehub/icons';
+import { Baichuan } from '@lobehub/icons';
 
 import { OpenAIProviderCard } from '@/config/modelProviders';
 import { featureFlagsSelectors, useServerConfigStore } from '@/store/serverConfig';
@@ -15,6 +16,7 @@ export const useOpenAIProvider = (): ProviderItem => {
       placeholder: 'https://api.openai.com/v1',
     },
     showApiKey: showOpenAIApiKey,
-    title: <OpenAI.Combine size={24} />,
+    // title: <OpenAI.Combine size={24} />,
+    title: <Baichuan.Combine size={24} />,
   };
 };
