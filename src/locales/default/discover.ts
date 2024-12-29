@@ -198,8 +198,8 @@ export default {
   tab: {
     assistants: '助手',
     home: '首页',
-    models: '模型',
+    // models: '模型',
     plugins: '插件',
-    providers: '模型服务商',
+    // providers: '模型服务商',
   },
 };
