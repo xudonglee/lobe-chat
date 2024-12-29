@@ -156,7 +156,7 @@ export const getLLMConfig = () => {
       ENABLED_MISTRAL: !!process.env.MISTRAL_API_KEY,
       MISTRAL_API_KEY: process.env.MISTRAL_API_KEY,
 
-      ENABLED_OPENROUTER: !!process.env.OPENROUTER_API_KEY,
+      ENABLED_OPENROUTER: process.env.ENABLED_OPENROUTER !== '0',
       OPENROUTER_API_KEY: process.env.OPENROUTER_API_KEY,
 
       ENABLED_TOGETHERAI: !!process.env.TOGETHERAI_API_KEY,
@@ -187,7 +187,7 @@ export const getLLMConfig = () => {
       WENXIN_ACCESS_KEY: process.env.WENXIN_ACCESS_KEY,
       WENXIN_SECRET_KEY: process.env.WENXIN_SECRET_KEY,
 
-      ENABLED_OLLAMA: process.env.ENABLED_OLLAMA !== '0',
+      ENABLED_OLLAMA: process.env.ENABLED_OLLAMA !== '1',
 
       ENABLED_QWEN: !!process.env.QWEN_API_KEY,
       QWEN_API_KEY: process.env.QWEN_API_KEY,
