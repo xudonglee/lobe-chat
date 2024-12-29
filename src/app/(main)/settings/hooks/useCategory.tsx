@@ -1,6 +1,7 @@
 import { Icon } from '@lobehub/ui';
 import { Tag } from 'antd';
-import { Bot, Brain, Cloudy, Info, Mic2, Settings2, Sparkles } from 'lucide-react';
+// import { Bot, Brain, Cloudy, Info, Mic2, Settings2, Sparkles } from 'lucide-react';
+import { Bot, Cloudy, Info, Mic2, Settings2, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -50,15 +51,15 @@ export const useCategory = () => {
             </Link>
           ),
         },
-        showLLM && {
-          icon: <Icon icon={Brain} />,
-          key: SettingsTabs.LLM,
-          label: (
-            <Link href={'/settings/llm'} onClick={(e) => e.preventDefault()}>
-              {t('tab.llm')}
-            </Link>
-          ),
-        },
+        // showLLM && {
+        //   icon: <Icon icon={Brain} />,
+        //   key: SettingsTabs.LLM,
+        //   label: (
+        //     <Link href={'/settings/llm'} onClick={(e) => e.preventDefault()}>
+        //       {t('tab.llm')}
+        //     </Link>
+        //   ),
+        // },
 
         enableSTT && {
           icon: <Icon icon={Mic2} />,
