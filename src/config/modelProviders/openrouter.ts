@@ -166,53 +166,53 @@ const OpenRouter: ModelProviderCard = {
       },
       releasedAt: '2024-09-05',
     },
-    {
-      contextWindowTokens: 131_072,
-      description:
-        'LLaMA 3.2 旨在处理结合视觉和文本数据的任务。它在图像描述和视觉问答等任务中表现出色，跨越了语言生成和视觉推理之间的鸿沟。',
-      displayName: 'Llama 3.2 11B Vision',
-      enabled: true,
-      id: 'meta-llama/llama-3.2-11b-vision-instruct',
-      pricing: {
-        input: 0.162,
-        output: 0.162,
-      },
-      vision: true,
-    },
-    {
-      contextWindowTokens: 131_072,
-      description:
-        'LLaMA 3.2 旨在处理结合视觉和文本数据的任务。它在图像描述和视觉问答等任务中表现出色，跨越了语言生成和视觉推理之间的鸿沟。',
-      displayName: 'Llama 3.2 90B Vision',
-      enabled: true,
-      id: 'meta-llama/llama-3.2-90b-vision-instruct',
-      pricing: {
-        input: 0.4,
-        output: 0.4,
-      },
-      vision: true,
-    },
-    {
-      contextWindowTokens: 32_768,
-      description: 'Qwen2 是全新的大型语言模型系列，具有更强的理解和生成能力。',
-      displayName: 'Qwen2 7B (Free)',
-      enabled: true,
-      id: 'qwen/qwen-2-7b-instruct:free',
-    },
-    {
-      contextWindowTokens: 32_768,
-      description: 'LLaMA 3.1 提供多语言支持，是业界领先的生成模型之一。',
-      displayName: 'Llama 3.1 8B (Free)',
-      enabled: true,
-      id: 'meta-llama/llama-3.1-8b-instruct:free',
-    },
-    {
-      contextWindowTokens: 8192,
-      description: 'Gemma 2 是Google轻量化的开源文本模型系列。',
-      displayName: 'Gemma 2 9B (Free)',
-      enabled: true,
-      id: 'google/gemma-2-9b-it:free',
-    },
+    // {
+    //   contextWindowTokens: 131_072,
+    //   description:
+    //     'LLaMA 3.2 旨在处理结合视觉和文本数据的任务。它在图像描述和视觉问答等任务中表现出色，跨越了语言生成和视觉推理之间的鸿沟。',
+    //   displayName: 'Llama 3.2 11B Vision',
+    //   enabled: true,
+    //   id: 'meta-llama/llama-3.2-11b-vision-instruct',
+    //   pricing: {
+    //     input: 0.162,
+    //     output: 0.162,
+    //   },
+    //   vision: true,
+    // },
+    // {
+    //   contextWindowTokens: 131_072,
+    //   description:
+    //     'LLaMA 3.2 旨在处理结合视觉和文本数据的任务。它在图像描述和视觉问答等任务中表现出色，跨越了语言生成和视觉推理之间的鸿沟。',
+    //   displayName: 'Llama 3.2 90B Vision',
+    //   enabled: true,
+    //   id: 'meta-llama/llama-3.2-90b-vision-instruct',
+    //   pricing: {
+    //     input: 0.4,
+    //     output: 0.4,
+    //   },
+    //   vision: true,
+    // },
+    // {
+    //   contextWindowTokens: 32_768,
+    //   description: 'Qwen2 是全新的大型语言模型系列，具有更强的理解和生成能力。',
+    //   displayName: 'Qwen2 7B (Free)',
+    //   enabled: true,
+    //   id: 'qwen/qwen-2-7b-instruct:free',
+    // },
+    // {
+    //   contextWindowTokens: 32_768,
+    //   description: 'LLaMA 3.1 提供多语言支持，是业界领先的生成模型之一。',
+    //   displayName: 'Llama 3.1 8B (Free)',
+    //   enabled: true,
+    //   id: 'meta-llama/llama-3.1-8b-instruct:free',
+    // },
+    // {
+    //   contextWindowTokens: 8192,
+    //   description: 'Gemma 2 是Google轻量化的开源文本模型系列。',
+    //   displayName: 'Gemma 2 9B (Free)',
+    //   enabled: true,
+    //   id: 'google/gemma-2-9b-it:free',
+    // },
   ],
   checkModel: 'google/gemma-2-9b-it:free',
   description:

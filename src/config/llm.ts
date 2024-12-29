@@ -187,7 +187,7 @@ export const getLLMConfig = () => {
       WENXIN_ACCESS_KEY: process.env.WENXIN_ACCESS_KEY,
       WENXIN_SECRET_KEY: process.env.WENXIN_SECRET_KEY,
 
-      ENABLED_OLLAMA: process.env.ENABLED_OLLAMA !== '1',
+      ENABLED_OLLAMA: process.env.ENABLED_OLLAMA === '1',
 
       ENABLED_QWEN: !!process.env.QWEN_API_KEY,
       QWEN_API_KEY: process.env.QWEN_API_KEY,
