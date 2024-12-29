@@ -147,13 +147,16 @@ const ProviderConfig = memo<ProviderConfigProps>(
             children: (
               <Input.Password
                 autoComplete={'new-password'}
-                placeholder={t(`llm.apiKey.placeholder`, { name })}
-                visibilityToggle={false}  // 控制是否显示眼睛图标
                 onCopy={(e) => {
                   e.preventDefault(); // 禁止复制
                   message.warning('Copy is disabled for security reasons');
                 }}
-                style={{ fontFamily: 'password', WebkitTextSecurity: 'disc' }} //输入密码以 * 显示
+                placeholder={t(`llm.apiKey.placeholder`, { name })}
+                style={{
+                  WebkitTextSecurity: 'circle', // 显示为点号
+                  fontFamily: 'password',
+                }}
+                visibilityToggle={false}  // 控制是否显示眼睛图标，禁用眼睛图标
               />
             ),
             desc: t(`llm.apiKey.desc`, { name }),
