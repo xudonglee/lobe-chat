@@ -2,13 +2,6 @@ import { ModelProvider } from '@/libs/agent-runtime';
 import { genUserLLMConfig } from '@/utils/genUserLLMConfig';
 
 export const DEFAULT_LLM_CONFIG = genUserLLMConfig({
-  ollama: {
-    enabled: false, // This will hide the ollama in the chat list default
-    fetchOnClient: true,
-  },
-  openai: {
-    enabled: true,
-  },
 
   // Display this two default
   anthropic: {
@@ -17,7 +10,14 @@ export const DEFAULT_LLM_CONFIG = genUserLLMConfig({
   deepseek: {
     enabled: true,
   },
-
+  
+  ollama: {
+    enabled: false, // This will hide the ollama in the chat list default
+    fetchOnClient: true,
+  },
+  openai: {
+    enabled: true,
+  },
 });
 
 export const DEFAULT_MODEL = 'gpt-4o-mini';
