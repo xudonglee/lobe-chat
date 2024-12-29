@@ -221,7 +221,7 @@ const OpenRouter: ModelProviderCard = {
   id: 'openrouter',
   modelList: { showModelFetcher: true },
   modelsUrl: 'https://openrouter.ai/models',
-  name: 'OpenRouter',
+  name: 'ArkChat',
   url: 'https://openrouter.ai',
 };
 
