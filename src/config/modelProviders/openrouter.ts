@@ -3,16 +3,16 @@ import { ModelProviderCard } from '@/types/llm';
 // ref :https://openrouter.ai/docs#models
 const OpenRouter: ModelProviderCard = {
   chatModels: [
-    {
-      contextWindowTokens: 128_000,
-      description:
-        '根据上下文长度、主题和复杂性，你的请求将发送到 Llama 3 70B Instruct、Claude 3.5 Sonnet（自我调节）或 GPT-4o。',
-      displayName: 'Auto (best for prompt)',
-      enabled: true,
-      functionCall: false,
-      id: 'openrouter/auto',
-      vision: false,
-    },
+    // {
+    //   contextWindowTokens: 128_000,
+    //   description:
+    //     '根据上下文长度、主题和复杂性，你的请求将发送到 Llama 3 70B Instruct、Claude 3.5 Sonnet（自我调节）或 GPT-4o。',
+    //   displayName: 'Auto (best for prompt)',
+    //   enabled: true,
+    //   functionCall: false,
+    //   id: 'openrouter/auto',
+    //   vision: false,
+    // },
     {
       contextWindowTokens: 128_000,
       description:
@@ -217,6 +217,7 @@ const OpenRouter: ModelProviderCard = {
   checkModel: 'google/gemma-2-9b-it:free',
   description:
     'OpenRouter 是一个提供多种前沿大模型接口的服务平台，支持 OpenAI、Anthropic、LLaMA 及更多，适合多样化的开发和应用需求。用户可根据自身需求灵活选择最优的模型和价格，助力AI体验的提升。',
+  enabled: true,
   id: 'openrouter',
   modelList: { showModelFetcher: true },
   modelsUrl: 'https://openrouter.ai/models',
