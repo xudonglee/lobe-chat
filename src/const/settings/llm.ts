@@ -3,12 +3,21 @@ import { genUserLLMConfig } from '@/utils/genUserLLMConfig';
 
 export const DEFAULT_LLM_CONFIG = genUserLLMConfig({
   ollama: {
-    enabled: true,
+    enabled: false, // This will hide the ollama in the chat list default
     fetchOnClient: true,
   },
   openai: {
     enabled: true,
   },
+
+  // Display this two default
+  anthropic: {
+    enabled: true,
+  },
+  deepseek: {
+    enabled: true,
+  },
+
 });
 
 export const DEFAULT_MODEL = 'gpt-4o-mini';

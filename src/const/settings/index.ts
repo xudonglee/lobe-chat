@@ -20,7 +20,7 @@ export const DEFAULT_SETTINGS: UserSettings = {
   defaultAgent: DEFAULT_AGENT,
   general: DEFAULT_COMMON_SETTINGS,
   keyVaults: {},
-  languageModel: DEFAULT_LLM_CONFIG,
+  languageModel: DEFAULT_LLM_CONFIG,  // Default llm configuration is here
   sync: DEFAULT_SYNC_CONFIG,
   systemAgent: DEFAULT_SYSTEM_AGENT_CONFIG,
   tool: DEFAULT_TOOL_CONFIG,
