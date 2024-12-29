@@ -2,7 +2,7 @@
 
 import { ProviderCombine } from '@lobehub/icons';
 import { Form, type FormItemProps, Icon, type ItemGroup, Tooltip } from '@lobehub/ui';
-import { Input, Switch } from 'antd';
+import { Input, Switch, message } from 'antd';
 import { createStyles } from 'antd-style';
 import { debounce } from 'lodash-es';
 import { LockIcon } from 'lucide-react';
@@ -148,6 +148,12 @@ const ProviderConfig = memo<ProviderConfigProps>(
               <Input.Password
                 autoComplete={'new-password'}
                 placeholder={t(`llm.apiKey.placeholder`, { name })}
+                visibilityToggle={false}  // 控制是否显示眼睛图标
+                onCopy={(e) => {
+                  e.preventDefault(); // 禁止复制
+                  message.warning('Copy is disabled for security reasons');
+                }}
+                style={{ fontFamily: 'password', WebkitTextSecurity: 'disc' }} //输入密码以 * 显示
               />
             ),
             desc: t(`llm.apiKey.desc`, { name }),
