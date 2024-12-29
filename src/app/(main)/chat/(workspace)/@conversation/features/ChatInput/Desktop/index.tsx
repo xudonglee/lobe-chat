@@ -13,7 +13,7 @@ import TextArea from './TextArea';
 const leftActions = [
   'model',
   'fileUpload',
-  'knowledgeBase',
+  // 'knowledgeBase',
   'temperature',
   'history',
   'stt',
